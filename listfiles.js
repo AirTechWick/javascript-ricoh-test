@@ -1,6 +1,11 @@
 const body = {
-    "name": "camera.takePicture",
-    "parameters": {}
+    "name": "camera.listFiles",
+    "parameters": {
+			"fileType": "all",
+			"entryCount": 5,
+			"maxThumbSize": 0
+			
+		}
 }
 
 const response = await fetch('https://fake-theta.vercel.app/osc/commands/execute', 
